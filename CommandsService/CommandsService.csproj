@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="12.0.1" />
+    <PackageReference Include="google.protobuf" Version="3.24.4" />
+    <PackageReference Include="grpc.net.client" Version="2.58.0" />
+    <PackageReference Include="grpc.tools" Version="2.59.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="7.0.11" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="7.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.InMemory" Version="7.0.11" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="7.0.11" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="7.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="RabbitMQ.Client" Version="6.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Protobuf Include="Protos\Platforms.proto" GrpcServices="Client" />
+
+  </ItemGroup>
+
+</Project>
